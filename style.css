@@ -1,0 +1,30 @@
+header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuBar{
+    width: 100%;
+    background-color: #2b9cf2;
+    overflow: auto;
+}
+
+.menuBar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menuBar a:hover {
+    color: #0b7c35;
+}
+
+
+@media screen and (max-width: 500px){
+    .menuBar a {
+        float: none;
+        display: block;
+    }
+}
+
