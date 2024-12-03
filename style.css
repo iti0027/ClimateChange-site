@@ -1,6 +1,9 @@
-header{
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .menuBar{
     width: 100%;
@@ -39,7 +42,7 @@ header{
     display: none;
 }
 
-img{
+.fotoSlide{
     vertical-align: middle;
     width: 100%;
     height: auto;
@@ -105,4 +108,41 @@ img{
     .prev, .next, .text {
     font-size: 11px;
     }
+}
+
+.missao{
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.h3-missao{
+    text-align: center;
+    font-style: italic;
+}
+
+.p-missao{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+}
+
+.mdClimatica{
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.mdPosition{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imc-position{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.imc-div{
+    margin: 25px;
+    text-align: justify;
 }
