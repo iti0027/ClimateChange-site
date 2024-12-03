@@ -1,0 +1,307 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #2b9cf2;
+    padding: 10px 0;
+}
+
+.menuBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuBar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menuBar a:hover {
+    color: #0b7c35;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 1200px;
+    height: 870px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+}
+
+/* Seção: Nossa Missão */
+.missao {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.missao h3 {
+    font-size: 24px;
+    color: #2b9cf2;
+    margin-bottom: 10px;
+}
+
+.missao p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Seção principal */
+main {
+    margin: 20px;
+}
+
+#climateChanges {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#climateChanges h2 {
+    font-size: 26px;
+    color: #2b9cf2;
+    margin-bottom: 15px;
+}
+
+#climateChanges .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#climateChanges .content img {
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#climateChanges .content p {
+    flex: 1;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Impactos mudanças climáticas */
+#climateImpacts h3 {
+    font-size: 26px;
+    color: #2b9cf2;
+    margin-bottom: 15px;
+}
+
+.impacts1{
+    display: flex;
+    margin: 40px;
+    padding-right: 35px;
+}
+
+.impacts2 {
+    display: flex;
+    margin: 25px;
+    padding-right: 35px;
+}
+
+#climateImpacts .content h5{
+    font-size: 16px;
+    color: #2b9cf2;
+    margin-bottom: 15px;
+}
+
+#climateImpacts .content img{
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#climateImpacts .content p{
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Alterações climáticas */
+#climateAlterations {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#climateAlterations h3 {
+    font-size: 26px;
+    color: #2b9cf2;
+    margin-bottom: 15px;
+}
+
+#climateAlterations .content h5 {
+    font-size: 16px;
+    color: #2b9cf2;
+    margin-bottom: 5px;
+}
+
+#climateAlterations .content p {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Soluções possíveis */
+#solutions h3 {
+    font-size: 26px;
+    color: #2b9cf2;
+    margin-bottom: 15px;
+}
+
+.solutions1 {
+    display: flex;
+    margin: 25px;
+    margin-right: 50px;
+    padding-right: 35px;
+}
+
+.solutions2 {
+    display: flex;
+    margin: 25px;
+    margin-right: 150px;
+    padding-right: 35px;
+}
+
+#solutions .content h5 {
+    font-size: 16px;
+    color: #2b9cf2;
+    margin-bottom: 5px;
+}
+
+#solutions .content p {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#solutions .content ul {
+    list-style: none;
+}
+
+.motivation{
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+#sign-up {
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#7dc2f7b2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+#sign-up h3 {
+    font-size: 26px;
+    color: #13573c;
+    margin-bottom: 15px;
+}
+
+#sign-up p{
+    flex: 1;
+    font-size: 14px;
+    color: #353434;
+    line-height: 1.8;
+}
+
+#emailConfirm {
+    font-size: 9px;
+    color: #0b7c35;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2b9cf2;
+    padding: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: #0b7c35;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menuBar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menuBar a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    #climateChanges .content img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menuBar a {
+        font-size: 12px;
+    }
+
+    .missao h3 {
+        font-size: 20px;
+    }
+
+    .missao p, #climateChanges .content p {
+        font-size: 16px;
+    }
+}
