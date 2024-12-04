@@ -35,15 +35,24 @@ function showSlides(n){
 }
 
 function inscrever(){
-    let name = document.getElementById("userName").ariaValueMax;
-    let lastName = document.getElementById("userlastName").value;
+    let name = document.getElementById("userName").value;
+    let lastName = document.getElementById("userLastName").value;
     let state = document.getElementById("region").value;
     let email = document.getElementById("userEmail").value;
     let answer = document.getElementById("resp");
 
-    if (name === "" && lastName === "" && state === "" && email === ""){
+    let checkbox = document.querySelector("input[type= 'checkbox']").checked;
+
+    if (name === "" || lastName === "" || state === "" || email === ""){
         answer.innerHTML = 'Por favor, preencha todos os espaços requisitados';
         answer.style.fontSize = "10px";
         answer.style.color = "red";
+    }
+
+    if (!checkbox) {
+        answer.innerHTML = 'Você precisa concordar em receber as atualizações.';
+        answer.style.fontSize = "10px";
+        answer.style.color = "red";
+        return; // interrompe a execução para não continuar com a validação
     }
 }
