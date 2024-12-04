@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change | Login</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width:100%;
+            height:100%;
+            background-color: #f4f4f4;
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            color: #333;
+            background-color: #99c8efa5;;
+            padding: 15px 15px 25px 15px;
+            border-radius: 15px;
+        }
+
+        form h2 {
+            color: #2b9cf2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            display: block;
+            margin: auto;
+            width: 250px;
+        }
+    </style>
 </head>
 <body>
-    <a href="our-mission/mission.html">Link para a página de missão</a>
+    <header>
+        <nav class="menuBar">
+            <a href="mission.html"><i class="menuBar-Mission"></i> Our Mission</a>
+            <a href="../regioes/regioes.html"><i class="menurBar-Regions"></i>Regions</a>
+            <a href="../novidades/novidades.html"><i class="menuBar-News"></i>News</a>
+            <a href="../sobre-nos/sobre-nos.html"><i class="menuBar-About"></i>About Us</a>
+            <a href="index.html"><i class="menuLogin"></i>Login</a>
+        </nav>
+    </header>
+
+    <form>
+        <h2>Login</h2>
+        <input type="text" placeholder="name:" id="userName">
+        <br>
+        <input type="password" placeholder="senha:" id="password">
+        <br>
+        <a href="" style="text-decoration: none;">Esqueci a senha</a>
+        <br>
+        <input type="submit" style="width: 75px;" onclick="login(event)">
+        <div id="resp"></div>
+        <a href="our-mission/mission.html"></a>
+    </form>
+
+
+    <script>
+        function login(event){
+            event.preventDefault();
+
+            let user = document.getElementById("userName").value;
+            let password = document.getElementById("password").value;
+            let answer = document.getElementById("resp");
+            let link = document.getElementById("link");
+            
+            if ( user == "usuario" && password == "12345"){
+                answer.innerHTML = `Olá <strong>${user}</strong>, muito bem vindo! Espero que aproveite o nosso site e divirta-se!`
+            }
+            else{
+                answer.innerHTML = 'Nome ou senha incorreta, por favor, tente novamente.'
+                document.getElementById("userName").value = "";
+                document.getElementById("password").value = "";
+            }
+        }
+    </script>
 </body>
 </html>
