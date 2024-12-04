@@ -20,12 +20,26 @@ header {
 
 .menuBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
+.menuBar h1 {
+    color: #177734;
+    position: relative;
+    padding-left: 5px;
+    font-size: 30px; 
+}
+
+.menuBar img{
+    position: absolute;
+    width: 40px;
+    right: -40px;
+    top: 3px;
+}
+
 .menuBar a {
-    color: white;
+    color: rgb(216, 213, 213);
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
@@ -272,7 +286,7 @@ footer a:hover{
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 799px) {
     .menuBar {
         flex-direction: column;
         text-align: center;
