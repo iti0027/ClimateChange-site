@@ -34,4 +34,16 @@ function showSlides(n){
     dots[slideIndex-1].className +="active";
 }
 
-console.log('testar')
+function inscrever(){
+    let name = document.getElementById("userName").ariaValueMax;
+    let lastName = document.getElementById("userlastName").value;
+    let state = document.getElementById("region").value;
+    let email = document.getElementById("userEmail").value;
+    let answer = document.getElementById("resp");
+
+    if (name === "" && lastName === "" && state === "" && email === ""){
+        answer.innerHTML = 'Por favor, preencha todos os espaços requisitados';
+        answer.style.fontSize = "10px";
+        answer.style.color = "red";
+    }
+}
