@@ -23,6 +23,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2b9cf2;
 }
 
 .menuBar h1 {

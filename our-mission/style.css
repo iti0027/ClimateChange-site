@@ -22,6 +22,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2b9cf2;
 }
 
 .menuBar h1 {
@@ -61,6 +66,7 @@ header {
 }
 
 .slideshow img {
+    padding-top:2px;
     width: 100%;
     height: auto;
 }
