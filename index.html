@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change | Login</title>
-   
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            width:100%;
+            height:100%;
+            background-color: #f4f4f4;
+        }
+
+        .title{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #2b9cf2;
+            padding: 10px 0px;
+            color: #f4f4f4;
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            color: #333;
+            background-color: #99c8efa5;;
+            padding: 15px 15px 25px 15px;
+            border-radius: 15px;
+        }
 
         form h2 {
             color: #2b9cf2;
@@ -31,6 +60,8 @@
     </style>
 </head>
 <body>
+    <h1 class="title">Climate Change</h1>
+
     <form>
         <h2>Login</h2>
         <input type="text" placeholder="name:" id="userName">
@@ -60,7 +91,7 @@
             }
             else{
                 answer.innerHTML = 'Nome ou senha incorreta, por favor, tente novamente.'
-                answer.style.color = "rgba(255, 0, 0, 0.658)";
+                answer.style.color = "#2b9cf2";
                 answer.style.fontFamily = "arial";
                 answer.style.fontSize = "10px";
                 document.getElementById("userName").value = "";
