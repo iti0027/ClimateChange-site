@@ -42,3 +42,26 @@ header {
 .menuBar a:hover {
   color: #0b7c35;
 }
+
+#container {
+  background-color: rgb(255, 239, 220);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 4px 12px;
+}
+
+#search input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  width: 100%;
+}
