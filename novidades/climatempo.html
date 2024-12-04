@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate Change | ClimaTempo</title>
     <link rel="stylesheet" href="climatempo.css" />
-    <script src="climatempo.js"></script>
+    <script src="climatempo.js" defer></script>
   </head>
   <body>
     <div id="container">
@@ -69,9 +69,21 @@
                 <p id="humidity">50%</p>
               </div>
             </div>
+
+            <div class="info">
+              <i id="wind_icon" class="fa-solid fa-wind"></i>
+
+              <div>
+                <h2>Vento</h2>
+
+                <p id="wind">50 km/h</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div id="alert"></div>
   </body>
 </html>
