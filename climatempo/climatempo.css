@@ -58,3 +58,14 @@
   .menuBar a:hover {
     color: #0b7c35;
   }
+
+  #container {
+    background-color: #d8e2eb;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+  }
