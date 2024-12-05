@@ -39,6 +39,16 @@ header {
   transition: color 0.3s ease;
 }
 
+main {
+  padding-top: 60px;
+  margin-top: 20px;
+}
+
+#intro {
+  text-align: center;
+  margin: 20px;
+}
+
 .menuBar a:hover {
   color: #0b7c35;
 }
