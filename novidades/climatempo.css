@@ -67,6 +67,12 @@ main {
   margin-top: 20px;
   width: 80%;
   max-width: 800px;
+  transition: transform 0.5s ease, opacity 0.5s ease-in-out;
+}
+
+#container.animate {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 #search {

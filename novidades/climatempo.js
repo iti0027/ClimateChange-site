@@ -72,6 +72,21 @@ function showInfo(json) {
   )}km/h`;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("search");
+  const container = document.getElementById("container");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    container.classList.add("animate");
+
+    setTimeout(function () {
+      container.classList.remove("animate");
+    }, 500);
+  });
+});
+
 function showAlert(msg) {
   document.querySelector("#alert").innerHTML = msg;
 }
