@@ -32,8 +32,9 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
   } else {
     document.querySelector("#weather").classList.remove("show");
     showAlert(`
-        Não foi possível localizar...
-        <img src=""/>
+            Não foi possível localizar...
+
+            <img src="src/images/404.svg"/>
         `);
   }
 });
@@ -48,25 +49,27 @@ function showInfo(json) {
   document.querySelector("#temp_value").innerHTML = `${json.temp
     .toFixed(1)
     .toString()
-    .replace(".", ",")} <sup>°C</sup>`;
+    .replace(".", ",")} <sup>C°</sup>`;
   document.querySelector("#temp_description").innerHTML = `${json.description}`;
   document
     .querySelector("#temp_img")
     .setAttribute(
       "src",
-      `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`
+      `https://openweathermap.org/img/wn/${json.tempIcon}@2x.png`
     );
 
   document.querySelector("#temp_max").innerHTML = `${json.tempMax
     .toFixed(1)
     .toString()
-    .replace(".", ",")} <sup>°C</sup>`;
+    .replace(".", ",")} <sup>C°</sup>`;
   document.querySelector("#temp_min").innerHTML = `${json.tempMin
     .toFixed(1)
     .toString()
-    .replace(".", ",")} <sup>°C</sup>`;
+    .replace(".", ",")} <sup>C°</sup>`;
   document.querySelector("#humidity").innerHTML = `${json.humidity}%`;
-  document.querySelector("#wind").innerHTML = `${json.windSpeed}km/h`;
+  document.querySelector("#wind").innerHTML = `${json.windSpeed.toFixed(
+    1
+  )}km/h`;
 }
 
 function showAlert(msg) {

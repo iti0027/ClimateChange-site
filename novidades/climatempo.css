@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: f4f4f4;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
 }
 
 #container {
-  background-color: rgb(255, 239, 220);
+  background-color: #d8e2eb;
   border-radius: 20px;
   padding: 18px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
