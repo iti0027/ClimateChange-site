@@ -56,4 +56,19 @@ function showInfo(json) {
       "src",
       `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`
     );
+
+  document.querySelector("#temp_max").innerHTML = `${json.tempMax
+    .toFixed(1)
+    .toString()
+    .replace(".", ",")} <sup>°C</sup>`;
+  document.querySelector("#temp_min").innerHTML = `${json.tempMin
+    .toFixed(1)
+    .toString()
+    .replace(".", ",")} <sup>°C</sup>`;
+  document.querySelector("#humidity").innerHTML = `${json.humidity}%`;
+  document.querySelector("#wind").innerHTML = `${json.windSpeed}km/h`;
+}
+
+function showAlert(msg) {
+  document.querySelector("#alert").innerHTML = msg;
 }
