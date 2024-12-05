@@ -112,3 +112,26 @@ header {
   font-size: 50px;
   line-height: 55px;
 }
+
+#temp_description {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+#other_infos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+#other_infos .info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 4px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  gap: 10px;
+}
