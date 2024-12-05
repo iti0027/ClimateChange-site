@@ -135,3 +135,41 @@ header {
   background-color: #fff;
   gap: 10px;
 }
+
+#other_infos .info h2 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#other_infos .info i {
+  text-align: center;
+  font-size: 20px;
+  width: 20%;
+}
+
+#temp_max_icon {
+  color: #7f1d1d;
+}
+
+#temp_min_icon {
+  color: #0284c7;
+}
+
+#humidity_icon {
+  color: #0ea5e9;
+}
+
+#wind_icon {
+  color: #7c3aed;
+}
+
+#alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#alert img {
+  width: 200px;
+  margin-top: 20px;
+}
