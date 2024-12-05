@@ -65,3 +65,22 @@ header {
   font-size: 16px;
   width: 100%;
 }
+
+#search input:focus-visible {
+  outline: none;
+}
+
+#search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#weather {
+  display: none;
+  margin-top: 20px;
+}
+
+#weather.show {
+  display: block;
+}
