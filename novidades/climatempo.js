@@ -44,4 +44,16 @@ function showInfo(json) {
   document.querySelector("#weather").classList.add("show");
 
   document.querySelector("#title").innerHTML = `${json.city}, ${json.country}`;
+
+  document.querySelector("#temp_value").innerHTML = `${json.temp
+    .toFixed(1)
+    .toString()
+    .replace(".", ",")} <sup>°C</sup>`;
+  document.querySelector("#temp_description").innerHTML = `${json.description}`;
+  document
+    .querySelector("#temp_img")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`
+    );
 }
