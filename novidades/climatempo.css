@@ -217,3 +217,15 @@ footer a {
 footer a:hover {
   color: #0b7c35;
 }
+
+footer hr {
+  margin: 20px 0;
+  width: 15%;
+  border: none;
+  border-top: #2b9cf2;
+}
+
+footer p {
+  margin: 10px 0;
+  color: #353434;
+}
