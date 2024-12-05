@@ -32,12 +32,11 @@ header {
 .menuBar h1 {
     color: #177734;
     position: relative;
-    padding-left: 5px;
+    padding: 0 5px 0 25px;
     font-size: 30px; 
 }
 
 .menuBar img{
-    position: absolute;
     width: 40px;
     right: -40px;
     top: 3px;
@@ -52,13 +51,17 @@ header {
     transition: color 0.3s ease;
 }
 
+.menuBar div{
+    display: flex;
+}
+
 .menuBar a:hover {
     color: #0b7c35;
 }
 
 /* Slideshow */
 .slideshow {
-    position: relative;
+   
     width: 1200px;
     height: 870px;
     max-width: 100%;
@@ -69,6 +72,40 @@ header {
     padding-top:2px;
     width: 100%;
     height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: #7e7e7e9c;
+}
+
+.text {
+    text-align: center;
+    border-radius: 13px;
+    background-color: #15913a;
+    width: 150px;
+    margin: auto;
+    color: #f3ededa8;
+    font-weight: bold;
 }
 
 /* Seção: Nossa Missão */
@@ -292,7 +329,7 @@ footer a:hover{
 }
 
 /* Responsividade */
-@media (max-width: 799px) {
+@media (max-width: 780px) {
     .menuBar {
         flex-direction: column;
         text-align: center;
