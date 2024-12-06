@@ -1,17 +1,8 @@
-/* Estilização global */
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
 
 /* Header */
 header {
@@ -23,24 +14,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     background: #2b9cf2;
+    padding: 0 20px;
 }
 
 .menuBar h1 {
     color: #177734;
-    position: relative;
-    padding: 0 5px 0 25px;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
-.menuBar img{
+.menuBar img {
     width: 40px;
-    right: -40px;
-    top: 3px;
 }
 
 .menuBar a {
@@ -52,43 +39,65 @@ header {
     transition: color 0.3s ease;
 }
 
-.menuBar div{
-    display: flex;
-}
-
 .menuBar a:hover {
     color: #0b7c35;
 }
 
+.menuBar div{
+    display: flex;
+}
 
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .menuBar {
-        flex-direction: column;
-        text-align: center;
-    }
-    }
+/* Region Titles */
+.txt-1 h1 {
+    margin-top: 24px;
+    color: #2b9cf2;
+    font-size: 4.5em;
+    text-align: center;
+    padding: 25px 2%;
+}
 
-    .content {
-        flex-direction: column;
-    }
+/* Container */
+.container {
+    padding: 24px;
+}
 
-    #climateChanges .content img {
-        width: 100%;
-    }
+/* Image Section */
+.regiaof {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
 
+.img-class {
+    border-radius: 20px;
+    width: 30vw;
+}
 
-@media (max-width: 480px) {
-    .menuBar a {
-        font-size: 12px;
-    }
+/* Subtitles */
+.subtitle {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b9cf2;
+}
 
-    .missao h3 {
-        font-size: 20px;
-    }
+/* Text Content */
+.txt2, .txt3, .txt4, .txt5, .txt6 {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
 
-    .missao p, #climateChanges .content p {
-        font-size: 16px;
-    }
+/* Section Styling */
+.region-section {
+    margin-bottom: 80px;
+}
+
+p{
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 90%;
+    margin: auto;
+    color: #555;
 }
