@@ -39,3 +39,15 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
       }
     });
     
+    function showInfo(json) {
+        showAlert("");
+      
+        document.querySelector("#weather").classList.add("show");
+      
+        document.querySelector("#title").innerHTML = `${json.city}, ${json.country}`;
+      
+        document.querySelector("#temp_value").innerHTML = `${json.temp
+          .toFixed(1)
+          .toString()
+          .replace(".", ",")} <sup>C°</sup>`;
+        document.querySelector("#temp_description").innerHTML = `${json.description}`;
