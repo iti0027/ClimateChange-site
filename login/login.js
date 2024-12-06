@@ -44,7 +44,7 @@ const loginCamp = async (event) => {
         answer.innerHTML = 'Nome ou senha incorreta, por favor, tente novamente.'
         answer.style.color = "#2b9cf2";
         answer.style.fontFamily = "arial";
-        answer.style.fontSize = "10px";
+        answer.style.fontSize = "15px";
         document.getElementById("userName").value = "";
         document.getElementById("password").value = ""; 
         return;
@@ -60,8 +60,9 @@ const loginCamp = async (event) => {
         history.back();
     }
 
-    answer.innerHTML = `Olá <strong>${username}</strong>, muito bem vindo! Espero que aproveite o nosso site e divirta-se!`
-    location.href = "our-mission/mission.html"
+    answer.innerHTML = `Olá <strong>${username}</strong>, muito bem vindo! Espero que aproveite o nosso site e divirta-se!`;
+    answer.style.fontSize = "15px"
+    location.href = "our-mission/mission.html";
 };
 
 document.getElementById("loginForm").addEventListener("submit", loginCamp);

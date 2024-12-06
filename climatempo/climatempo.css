@@ -81,6 +81,10 @@ main {
   margin: 20px;
 }
 
+#intro h1{
+  color: #2b9cf2;
+}
+
 .menuBar a:hover {
   color: #0b7c35;
 }
