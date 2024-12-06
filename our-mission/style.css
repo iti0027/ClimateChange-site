@@ -69,7 +69,7 @@ header {
 }
 
 .slideshow img {
-    padding-top:2px;
+    padding-top:5px;
     width: 100%;
     height: auto;
 }
@@ -90,7 +90,7 @@ header {
 }
 
 .next {
-    right: 0;
+    right: 160px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -159,6 +159,7 @@ main {
     width: 50%;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 #climateChanges .content p {
@@ -194,9 +195,12 @@ main {
 }
 
 #climateImpacts .content img{
-    width: 50%;
+    width: 75%;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.051);
+    display: block;
+    margin: auto;
+    padding-top: 8px;
 }
 
 #climateImpacts .content p{
@@ -204,6 +208,15 @@ main {
     font-size: 14px;
     color: #555;
     line-height: 1.8;
+    text-align: justify;
+}
+
+#climateImpacts .content {
+    background-color: #c2d5e53d;
+    width: 350px;
+    margin: 15px;
+    padding: 0 7px 9px 9px;
+    border-radius: 13px;
 }
 
 /* Alterações climáticas */
@@ -233,6 +246,7 @@ main {
     color: #555;
     line-height: 1.8;
 }
+
 
 /* Soluções possíveis */
 #solutions h3 {
@@ -266,11 +280,22 @@ main {
     font-size: 14px;
     color: #555;
     line-height: 1.8;
+    text-align: justify;
 }
 
 #solutions .content ul {
     list-style: none;
 }
+
+#solutions .content {
+   background-color: #c2d5e53d; 
+   width: 450px;
+   margin: 10px;
+   padding: 0 5px 0 15px;
+   border-radius: 12px;
+   
+}
+
 
 .motivation{
     padding: 20px;
@@ -346,6 +371,10 @@ footer a:hover{
 
     #climateChanges .content img {
         width: 100%;
+    }
+    .next {
+        right: 0px;
+        border-radius: 3px 0 0 3px;
     }
 }
 
