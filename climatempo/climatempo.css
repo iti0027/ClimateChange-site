@@ -25,18 +25,44 @@ header {
 }
 
 .menuBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2b9cf2;
+}
+
+.menuBar h1 {
+    color: #177734;
+    position: relative;
+    padding: 0 5px 0 25px;
+    font-size: 30px; 
+}
+
+.menuBar img{
+    width: 40px;
+    right: -40px;
+    top: 3px;
 }
 
 .menuBar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
+    color: rgb(216, 213, 213);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menuBar div{
+    display: flex;
+}
+
+.menuBar a:hover {
+    color: #0b7c35;
 }
 
 main {
