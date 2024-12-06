@@ -4,41 +4,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-  }
+    font-family: Arial, sans-serif;
+}
 
-  header {
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
     background: #2b9cf2;
     padding: 10px 0;
+}
+
+.menuBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-  }
+    background: #2b9cf2;
+}
 
-  .menuBar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.menuBar h1 {
+    color: #177734;
+    position: relative;
+    padding: 0 5px 0 25px;
+    font-size: 30px; 
+}
 
-  .menuBar a {
-    color: white;
+.menuBar img{
+    width: 40px;
+    right: -40px;
+    top: 3px;
+}
+
+.menuBar a {
+    color: rgb(216, 213, 213);
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease;
-  }
+}
 
+.menuBar div{
+    display: flex;
+}
+
+.menuBar a:hover {
+    color: #0b7c35;
+}
   main {
     flex: 1;
     margin-top: -30px;
