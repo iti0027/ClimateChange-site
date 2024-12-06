@@ -12,7 +12,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
 /* Header */
 header {
     background: #2b9cf2;
@@ -44,7 +43,7 @@ header {
 }
 
 .menuBar a {
-    color: rgb(216, 213, 213);
+    color: rgb(235, 234, 234);
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
@@ -59,7 +58,6 @@ header {
 .menuBar a:hover {
     color: #0b7c35;
 }
-
 
 
 /* Responsividade */

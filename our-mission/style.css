@@ -104,7 +104,7 @@ header {
     background-color: #15913a;
     width: 150px;
     margin: auto;
-    color: #f3ededa8;
+    color: #f3eded;
     font-weight: bold;
 }
 
@@ -275,12 +275,13 @@ main {
     margin-bottom: 5px;
 }
 
-#solutions .content p {
+#solutions .content li {
     flex: 1;
     font-size: 14px;
     color: #555;
     line-height: 1.8;
     text-align: justify;
+    padding-right: 5px;
 }
 
 #solutions .content ul {
@@ -354,6 +355,13 @@ footer a:hover{
 }
 
 /* Responsividade */
+@media (max-width:1534px) {
+    .next {
+        right: 0px;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
 @media (max-width: 780px) {
     .menuBar {
         flex-direction: column;
@@ -389,5 +397,10 @@ footer a:hover{
 
     .missao p, #climateChanges .content p {
         font-size: 16px;
+    }
+
+    .next {
+        right: 0px;
+        border-radius: 3px 0 0 3px;
     }
 }

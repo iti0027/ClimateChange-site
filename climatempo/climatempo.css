@@ -49,7 +49,7 @@ header {
 }
 
 .menuBar a {
-    color: rgb(216, 213, 213);
+    color: rgb(235, 234, 234);
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
@@ -260,4 +260,39 @@ footer hr {
 footer p {
   margin: 10px 0;
   color: #353434;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menuBar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .menuBar a {
+      font-size: 14px;
+      padding: 8px 10px;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+  #climateChanges .content img {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuBar a {
+      font-size: 12px;
+  }
+
+  .missao h3 {
+      font-size: 20px;
+  }
+
+  .missao p, #climateChanges .content p {
+      font-size: 16px;
+  }
 }
