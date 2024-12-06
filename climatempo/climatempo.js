@@ -16,3 +16,26 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
     
       const results = await fetch(apiUrl);
       const json = await results.json();
+
+      if (json.cod === 200) {
+        showInfo({
+          city: json.name,
+          country: json.sys.country,
+          temp: json.main.temp,
+          tempMax: json.main.temp_max,
+          tempMin: json.main.temp_min,
+          description: json.weather[0].description,
+          tempIcon: json.weather[0].icon,
+          windSpeed: json.wind.speed,
+          humidity: json.main.humidity,
+        });
+      } else {
+        document.querySelector("#weather").classList.remove("show");
+        showAlert(`
+                Não foi possível localizar...
+    
+                <img src="src/images/404.svg"/>
+            `);
+      }
+    });
+    
