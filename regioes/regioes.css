@@ -55,7 +55,7 @@ header {
 .txt-1 h1 {
     margin-top: 24px;
     color: #2b9cf2;
-    font-size: 4.5em;
+    font-size: 2.5em;
     text-align: center;
     padding: 25px 2%;
 }
@@ -80,7 +80,7 @@ header {
 
 /* Subtitles */
 .subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
     color: #2b9cf2;
@@ -98,7 +98,6 @@ header {
 }
 
 p{
-    font-weight: bold;
     line-height: 1.5em;
     width: 90%;
     margin: auto;
