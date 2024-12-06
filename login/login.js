@@ -66,4 +66,81 @@ const loginCamp = async (event) => {
 
 document.getElementById("loginForm").addEventListener("submit", loginCamp);
 
+const crudPut = async () => {
+    let putuser = user;
+    if (!putuser) {
+        alert("Você precisa estar logado.");
+        return;
+    }
+    try {
+        const response = await fetch(`${baseUrl}/ ${nome.objectId}`,{
+            method: "PUT",
+            headers: {
+                ...headersJson,
+                "X-Parse-Session-Token": user.sessionToken,
+            },
+        });
+        if(!response.ok) {
+            alert("Erro ao acessar o servidor:" + response.status);
+            throw new error ("Erro encontrado:" + response.status);
+        }
+    } catch(error) {
+        console.log(error);
+    }
+};
+
+const crudDelete = async() => {
+    let deleteuser = user;
+    if (!deleteuser) {
+        alert("Você precisa estar logado.");
+        return;
+    }
+    try {
+        const response = await fetch(`${baseUrl}/${nome.objectId}`,{
+            method: "DELETE",
+            headers: {
+                ...headers,
+                "X-Parse-Session-Token": user.sessionToken,
+            },
+        });
+        console.log(response);
+        if (!response.ok){
+            alert("Erro ao acessar o servidor: " + response.status);
+            throw new Error("Erro encontrado: " + response.status);
+        }
+        crudGet();
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+const crudGet = async () => {
+    let getuser = user;
+    if(!getuser) {
+        alert("Você precisa estar logado para listar as tarefas!");
+        return;
+    }
+    try {
+        console.log("baseURL", baseUrl);
+    console.log("headers", {
+      ...headers,
+      "X-Parse-Session-Token": user.sessionToken,
+    });
+    const response = await fetch(baseUrl, {
+        method: "GET",
+        headers: {
+          ...headers,
+          "X-Parse-Session-Token": user.sessionToken,
+        },
+      });
+      console.log(response);
+    if (!response.ok) {
+      alert("Erro ao acessar o servidor: " + response.status);
+      throw new Error("Erro encontrado: " + response.status);
+    }
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 
