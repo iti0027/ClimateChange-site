@@ -33,8 +33,6 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
         document.querySelector("#weather").classList.remove("show");
         showAlert(`
                 Não foi possível localizar...
-    
-                <img src="src/images/404.svg"/>
             `);
       }
     });
